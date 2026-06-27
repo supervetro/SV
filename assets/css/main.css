@@ -406,9 +406,9 @@ header {
     z-index: -2;
 }
 
-.solution-img-1 { background-image: url('https://69ce88e456508b5dd5d65519.imgix.net/projeto-cadas-arquitetura-piracaia-36.jpg?auto=format&fit=crop&w=800&q=80'); }
-.solution-img-2 { background-image: url('https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=800&q=80'); }
-.solution-img-3 { background-image: url('https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=800&q=80'); }
+.solution-img-1 { background-image: url('../Galeria/Porta Minimalista.jpg'); }
+.solution-img-2 { background-image: url('../Galeria/Janela de correr só vidro.JPG'); }
+.solution-img-3 { background-image: url('../Galeria/Fachada Muxarabi.jpg'); }
 
 .solution-overlay {
     position: absolute;
