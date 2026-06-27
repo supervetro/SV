@@ -169,6 +169,18 @@ img {
     border-color: rgba(255, 255, 255, 0.15);
 }
 
+.btn-express {
+    background: linear-gradient(135deg, #e8a838, #f0c15a);
+    color: var(--bg-deep);
+    box-shadow: 0 8px 24px rgba(232, 168, 56, 0.25);
+}
+
+.btn-express:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(232, 168, 56, 0.4);
+    background: linear-gradient(135deg, #f0c15a, #e8a838);
+}
+
 /* Header */
 header {
     position: fixed;
