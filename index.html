@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Super Vetro | Esquadrias de Alumínio para Projetos de Alto Padrão</title>
+    <meta name="description" content="Esquadrias de alumínio, soluções acústicas, fabricação sob medida e instalação especializada para projetos residenciais e corporativos de alto padrão." />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- GSAP & Lenis for animations and smooth scrolling -->
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.34/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+    <!-- SEO Premium & JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Super Vetro",
+      "image": "https://images.unsplash.com/photo-1511818966892-d7d671e672a2",
+      "@id": "https://supervetro.com.br",
+      "url": "https://supervetro.com.br",
+      "telephone": "+5571993976185",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Salvador",
+        "addressRegion": "BA",
+        "addressCountry": "BR"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "08:00",
+        "closes": "18:00"
+      },
+      "sameAs": [
+        "https://www.instagram.com/supervetro"
+      ]
+    }
+    </script>
+
+    <!-- App Styles -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-inner">
+            <a href="#" class="logo" aria-label="Voltar ao início">
+                <strong>Super Vetro</strong>
+                <span>Alumínio • Vidro • Alto Padrão</span>
+            </a>
+            <nav class="nav-links" aria-label="Menu principal">
+                <a href="#diferenciais" class="nav-link">Diferenciais</a>
+                <a href="#solucoes" class="nav-link">Soluções</a>
+                <a href="galeria.html" class="nav-link">Galeria</a>
+                <a href="#engenharia" class="nav-link">Engenharia</a>
+                <a href="#especificacoes" class="nav-link">Especificações</a>
+                <a href="#orcamento" onclick="openModal(event)" class="btn btn-primary btn-nav-cta">Orçamento</a>
+            </nav>
+            <button class="menu-btn" id="menuToggle" aria-label="Abrir menu" onclick="toggleMobileMenu()">☰</button>
+        </div>
+    </header>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/5571993976185?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20as%20esquadrias%20de%20alto%20padrão." 
+       class="wa-btn" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       aria-label="Falar no WhatsApp">
+        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.94 3.659 1.437 5.63 1.438h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        <span>Fale com o Comercial</span>
+    </a>
+
+    <main>
+        <!-- Hero -->
+        <section class="hero">
+            <div class="hero-bg" id="hero-img">
+                <img src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=1920&q=80" alt="Fachada com esquadrias de alto padrão" role="presentation" />
+            </div>
+            <div class="hero-overlay"></div>
+            
+            <div class="container hero-content">
+                <div class="gsap-hero">
+                    <span class="eyebrow">Arquitetura Integrada</span>
+                    <h1>Esquadrias de alumínio para projetos de alto padrão</h1>
+                    <p class="subtitle">
+                        Minimalismo estético aliado à máxima performance termoacústica. 
+                        Concebemos soluções em vidro e alumínio para arquitetura contemporânea, 
+                        onde cada milímetro é pensado para entregar perfeição.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#orcamento" onclick="openModal(event)" class="btn btn-primary">Solicitar Orçamento</a>
+                        <a href="#solucoes" class="btn btn-secondary">Conheça a Qualidade</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Diferenciais -->
+        <section class="section pt-0" id="diferenciais">
+            <div class="container">
+                <div class="features-grid">
+                    <article class="feature-card fade-up">
+                        <div class="feature-index">01</div>
+                        <h3>Design Minimalista</h3>
+                        <p>Perfis ultrafinos, superfícies limpas e total integração visual. Desenvolvidos meticulosamente para a valorização da arquitetura e entrada generosa de luz natural.</p>
+                    </article>
+                    <article class="feature-card fade-up">
+                        <div class="feature-index">02</div>
+                        <h3>Rigor Técnico Absoluto</h3>
+                        <p>Foco sistemático na vedação termoacústica e ancoragem estrutural segura. Garantimos longevidade superior e estrita conformidade com normas técnicas vigentes.</p>
+                    </article>
+                    <article class="feature-card fade-up">
+                        <div class="feature-index">03</div>
+                        <h3>Engenharia Premium</h3>
+                        <p>Matéria-prima de ponta, usinagem milimétrica e equipes de execução próprias altamente qualificadas. Não adotamos atalhos no processo construtivo.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Soluções -->
+        <section class="section" id="solucoes">
+            <div class="container">
+                <div class="title-block fade-up">
+                    <span class="eyebrow">Portfólio de Soluções</span>
+                    <h2>Sistemas desenvolvidos para as mais exigentes especificações</h2>
+                </div>
+
+                <div class="solutions-grid">
+                    <a href="#" class="solution-card fade-up">
+                        <div class="solution-bg solution-img-1"></div>
+                        <div class="solution-overlay"></div>
+                        <div class="solution-content">
+                            <span class="solution-tag">Linha Minimalista</span>
+                            <h3>Transparência e Amplitude</h3>
+                            <p>Ocultação quase total dos perfis nas alvenarias. O foco é deslocado do alumínio para o vidro e a paisagem.</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="solution-card fade-up delay-1">
+                        <div class="solution-bg solution-img-2"></div>
+                        <div class="solution-overlay"></div>
+                        <div class="solution-content">
+                            <span class="solution-tag">Linha Acústica</span>
+                            <h3>Conforto e Isolamento</h3>
+                            <p>Sistemas robustos de vedação e composição de vidros duplos garantem máxima redução de ruído e conforto térmico.</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="solution-card fade-up delay-2">
+                        <div class="solution-bg solution-img-3"></div>
+                        <div class="solution-overlay"></div>
+                        <div class="solution-content">
+                            <span class="solution-tag">Revestimentos</span>
+                            <h3>Ripados e Brises</h3>
+                            <p>Estruturas em alumínio que agregam textura, privacidade e controle solar a fachadas imponentes.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Engenharia (Dual Block) -->
+        <section class="section" id="engenharia">
+            <div class="container dual-block">
+                <div class="fade-up">
+                    <span class="eyebrow">Nossa Metodologia</span>
+                    <h2>A excelência construída pelo domínio total do processo</h2>
+                    
+                    <div class="specification-list">
+                        <div class="spec-item">
+                            <h4>Fabricação Inteligente</h4>
+                            <p>Equipe interna focada em projetos customizados. Da compatibilização à usinagem computadorizada, garantimos medidas infalíveis.</p>
+                        </div>
+                        <div class="spec-item">
+                            <h4>Instalação Própria Especializada</h4>
+                            <p>O desempenho acústico só é real se a instalação for perfeita. Não terceirizamos equipes de montagem.</p>
+                        </div>
+                        <div class="spec-item">
+                            <h4>Manutenção e Longo Prazo</h4>
+                            <p>Entregamos sistemas projetados para durar décadas, com assistência e componentes disponíveis para o pós-obra.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dual-image fade-up">
+                    <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1000&q=80" alt="Processo técnico de montagem e engenharia de precisão" />
+                </div>
+            </div>
+        </section>
+
+        <!-- Especificacoes de Base -->
+        <section class="section" id="especificacoes">
+            <div class="container">
+                <div class="title-block fade-up">
+                    <span class="eyebrow">Componentes Premium</span>
+                    <h2>A diferença material entre uma esquadria e uma obra prima</h2>
+                </div>
+
+                <div class="grid-style">
+                    <article class="spec-box fade-up">
+                        <h4>Aço Inox 304</h4>
+                        <p>Ancoragem mecanicamente segura contra intempéries. Resiste ativamente à oxidação, essencial em regiões litorâneas.</p>
+                    </article>
+                    <article class="spec-box fade-up">
+                        <h4>Guarnições EPDM</h4>
+                        <p>Borrachas automotivas vulcanizadas de altíssima longevidade. Não ressecam nem comprometem a barreira termoacústica.</p>
+                    </article>
+                    <article class="spec-box fade-up">
+                        <h4>Silicone Estrutural</h4>
+                        <p>Selamento de cura neutra de grau profissional. Mantém elasticidade, garantindo arremates impecáveis e blindagem contra água.</p>
+                    </article>
+                    <article class="spec-box fade-up">
+                        <h4>Perfis Bi-tubulares</h4>
+                        <p>Design de extrusão com câmaras múltiplas. Previne torção sob força do vento e aumenta drasticamente o limite de vãos livres.</p>
+                    </article>
+                    <article class="spec-box fade-up">
+                        <h4>Fechos Multimarcas Premium</h4>
+                        <p>Roldanas blindadas de duplo rolamento para movimentação leve de caixilhos super pesados. Travamento de segurança multiponto.</p>
+                    </article>
+                    <article class="spec-box fade-up">
+                        <h4>Pintura Eletrostática</h4>
+                        <p>Acabamentos arquitetônicos certificados em poliéster, garantindo retenção de brilho e resistência contra desbotamento ao longo de anos.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Final -->
+        <section class="cta-section" id="contato">
+            <div class="cta-glow"></div>
+            <div class="container cta-content fade-up">
+                <span class="eyebrow center-full">Fale conosco</span>
+                <h2>Sua arquitetura exige uma execução inquestionável.</h2>
+                <p>Nossos engenheiros estão prontos para analisar suas plantas e propor soluções que materializam o conceito do seu projeto com segurança milimétrica.</p>
+                <a href="#orcamento" onclick="openModal(event)" class="btn btn-primary btn-cta-large">Enviar Projeto para Análise</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="logo">
+                <strong>Super Vetro</strong>
+                <span>Alto Padrão</span>
+            </div>
+            <div class="footer-text">
+                &copy; <span id="year"></span> Super Vetro Esquadrias. Todos os direitos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal de Orçamento -->
+    <div class="modal" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="modal-overlay" onclick="closeModal()"></div>
+        <div class="modal-container">
+            <button class="modal-close" onclick="closeModal()" aria-label="Fechar modal">×</button>
+            <div class="modal-header">
+                <h3 id="modalTitle" class="playfair">Envie seu projeto</h3>
+                <p>Nossa equipe de engenharia receberá suas informações e entrará em contato prontamente.</p>
+            </div>
+            
+            <form id="projectForm" onsubmit="handleFormSubmit(event)">
+                <div class="form-group">
+                    <label for="nome">Nome Completo *</label>
+                    <input type="text" id="nome" class="form-control" required placeholder="Ex: João Silva" />
+                </div>
+                
+                <div class="form-group grid-2-col">
+                    <div>
+                        <label for="email">E-mail *</label>
+                        <input type="email" id="email" class="form-control" required placeholder="seu@email.com" />
+                    </div>
+                    <div>
+                        <label for="telefone">WhatsApp / Telefone</label>
+                        <input type="tel" id="telefone" class="form-control" placeholder="(00) 00000-0000" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="arquivo">Projeto Arquitetônico (PDF, DWG, Imagens)</label>
+                    <div class="file-upload">
+                        <svg viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+                        <span class="upload-hint">Clique para selecionar ou arraste o arquivo</span>
+                        <input type="file" id="arquivo" onchange="updateFileName(this)" accept=".pdf,.dwg,.jpg,.png,.zip" aria-label="Anexar arquivo de projeto" />
+                        <div id="fileNameDisplay" class="file-name"></div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensagem">Detalhes Adicionais</label>
+                    <textarea id="mensagem" class="form-control" placeholder="Contextualize seu projeto, prazos ou especificações..."></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-full">Enviar Solicitação</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Scripts: Lógica e Animações -->
+    <!-- App Scripts -->
+    <script src="assets/js/animations.js"></script>
+    <script src="assets/js/form-handler.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>
