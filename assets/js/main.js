@@ -13,7 +13,7 @@ const updateFooterYear = () => {
 let lastScroll = 0;
 const initHeaderScroll = () => {
     const header = document.getElementById('header');
-    if (!header) return;
+    if (!header || header.dataset.noHide !== undefined) return;
 
     window.addEventListener('scroll', () => {
         const currentScroll = window.pageYOffset;

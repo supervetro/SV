@@ -21,19 +21,15 @@
 <body>
 
     <!-- Header -->
-    <header id="header">
+    <header id="header" data-no-hide>
         <div class="container header-inner">
             <a href="index.html" class="logo" aria-label="Voltar ao início">
                 <strong>Super Vetro</strong>
                 <span>Alumínio • Vidro • Alto Padrão</span>
             </a>
-            <nav class="nav-links" aria-label="Menu principal">
+            <nav class="nav-links gallery-nav" aria-label="Menu principal">
                 <a href="index.html" class="nav-link">Início</a>
-                <a href="index.html#diferenciais" class="nav-link">Diferenciais</a>
-                <a href="index.html#solucoes" class="nav-link">Soluções</a>
-                <a href="index.html#engenharia" class="nav-link">Engenharia</a>
-                <a href="index.html#especificacoes" class="nav-link">Especificações</a>
-                <a href="galeria.html" class="nav-link" style="color:#fff;">Galeria</a>
+                <div class="gallery-nav-filters" id="galleryNavFilter"></div>
                 <a href="index.html#orcamento" class="btn btn-primary btn-nav-cta">Orçamento</a>
                 <a href="https://serviflux.vercel.app/cliente/novo?empresa_id=008fb6d8-b463-40c0-9f77-b88eb44bfe50" target="_blank" rel="noopener noreferrer" class="btn btn-express btn-nav-cta">Pedido Expresso →</a>
             </nav>
@@ -58,13 +54,6 @@
                 <span class="eyebrow">Portfólio</span>
                 <h1>Galeria de Projetos</h1>
                 <p>Registros reais de trabalhos entregues — cada projeto reflete o compromisso com a qualidade, o acabamento impecável e a precisão técnica que definem a Super Vetro.</p>
-            </div>
-        </section>
-
-        <!-- Category Filter -->
-        <section class="gallery-filter-section">
-            <div class="container">
-                <div class="gallery-filter" id="galleryFilter"></div>
             </div>
         </section>
 

@@ -81,15 +81,15 @@ function getImgPath(file) {
 }
 
 function renderFilter() {
-    const container = document.getElementById('galleryFilter');
-    let html = '<button class="filter-btn active" data-category="todas">Todas</button>';
+    const container = document.getElementById('galleryNavFilter');
+    let html = '<button class="nav-filter-pill active" data-category="todas">Todas</button>';
     galleryData.forEach(cat => {
-        html += `<button class="filter-btn" data-category="${cat.id}">${cat.label}</button>`;
+        html += `<button class="nav-filter-pill" data-category="${cat.id}">${cat.label}</button>`;
     });
     container.innerHTML = html;
-    container.querySelectorAll('.filter-btn').forEach(btn => {
+    container.querySelectorAll('.nav-filter-pill').forEach(btn => {
         btn.addEventListener('click', () => {
-            container.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+            container.querySelectorAll('.nav-filter-pill').forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
             filterGallery(btn.dataset.category);
         });
