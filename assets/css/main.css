@@ -320,7 +320,8 @@ header {
     display: grid;
     grid-template-columns: 1fr;
     max-width: 900px;
-    gap: 40px;
+    gap: 32px;
+    padding-bottom: 80px;
 }
 
 .hero h1 {
@@ -345,14 +346,18 @@ header {
     flex-wrap: wrap;
 }
 
+.hero-actions-secondary {
+    margin-top: 20px;
+}
+
 /* Features Section */
 .features-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 32px;
-    margin-top: -60px; /* Overlap hero */
+    margin-top: 40px;
     position: relative;
-    z-index: 10;
+    z-index: 1;
 }
 
 .feature-card {
